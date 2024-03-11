@@ -10,4 +10,3 @@ The main goal of this project is to streamline the bootstrapping of all my proje
 - `module`: default
 - `ui`: custom
 - `v3`: custom
-- 
