@@ -11,13 +11,9 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.191",
     "@nuxt/devtools": "^1.0.8",
     "@nuxt/eslint-config": "^0.2.0",
-    "@nuxt/ui": "^2.14.2",
     "@stylistic/eslint-plugin": "^1.6.3",
-    "@vueuse/core": "^10.9.0",
-    "@vueuse/nuxt": "^10.9.0",
     "eslint": "^8.57.0",
     "eslint-plugin-tailwindcss": "^3.15.0",
     "nuxt": "^3.10.3",
