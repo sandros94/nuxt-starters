@@ -5,8 +5,9 @@ The main goal of this project is to streamline the bootstrapping of all my proje
 
 # Templates available
 
-- `layer`: custom
+- `layer`: default + eslint
 - `module-devtools`: default
 - `module`: default
-- `ui`: custom
-- `v3`: custom
+- `ui`: default + eslint
+- `v3`: default + ui + vueuse + eslint
+- `v3-base`: default + eslint
