@@ -1,0 +1,7 @@
+*.lock*
+*.log*
+.nuxt
+.output
+node_modules
+yarn.lock
+dist
