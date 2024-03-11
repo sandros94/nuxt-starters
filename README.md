@@ -1,12 +1,39 @@
-# nuxt-starters
-My personal collection of starter templates for `nuxt init`.
+# Nuxt UI Minimal Starter
 
-The main goal of this project is to streamline the bootstrapping of all my projects and tests.
+Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more.
 
-# Templates available
+## Setup
 
-- `layer`: custom
-- `module-devtools`: default
-- `module`: default
-- `ui`: custom
-- `v3`: custom
+Make sure to install the dependencies:
+
+```bash
+# pnpm
+pnpm install
+```
+
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# pnpm
+pnpm run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# pnpm
+pnpm run build
+```
+
+Locally preview production build:
+
+```bash
+# pnpm
+pnpm run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
