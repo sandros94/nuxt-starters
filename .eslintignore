@@ -1,4 +1,4 @@
-# .eslintignore v1.1.0
+# .eslintignore v1.2.0
 # https://gist.github.com/Sandros94/7f3dc1539c8f5905c495aa1bb417589c
 
 
@@ -7,6 +7,7 @@
 .nuxt
 .nitro
 .cache
+.data
 dist
 
 # Node dependencies
