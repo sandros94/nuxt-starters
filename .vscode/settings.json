@@ -2,6 +2,9 @@
   // Enable ESLint
   "eslint.enable": true,
 
+  // Enable ESlint flat config support
+  "eslint.experimental.useFlatConfig": true,
+
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,
   "editor.formatOnSave": false,
@@ -20,6 +23,12 @@
     "typescriptreact",
     "vue",
     "html",
+    "markdown",
     "json",
+    "jsonc",
+    "yaml",
+    "toml",
+    "gql",
+    "graphql"
   ]
 }
