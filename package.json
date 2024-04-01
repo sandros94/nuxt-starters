@@ -19,7 +19,7 @@
     "@stefanobartoletti/eslint-config": "^1.2.4",
     "@types/node": "^20.11.30",
     "eslint": "^8.57.0",
-    "nuxt": "^3.10.3",
+    "nuxt": "^3.11.1",
     "typescript": "5.4.3",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
