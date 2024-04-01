@@ -14,11 +14,11 @@
   },
   "dependencies": {
     "@nuxt/devtools": "^1.0.8",
-    "@nuxt/eslint-config": "^0.2.0",
-    "@stylistic/eslint-plugin": "^1.6.3",
+    "@stefanobartoletti/eslint-config": "^1.2.4",
+    "@types/node": "^20.11.30",
     "eslint": "^8.57.0",
-    "eslint-plugin-tailwindcss": "^3.15.0",
     "nuxt": "^3.10.3",
+    "typescript": "5.4.3",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   }
