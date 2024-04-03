@@ -13,9 +13,9 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "@nuxt/devtools": "^1.0.8",
+    "@nuxt/devtools": "^1.1.5",
     "@stefanobartoletti/eslint-config": "^1.2.4",
-    "@types/node": "^20.11.30",
+    "@types/node": "^20.12.4",
     "eslint": "^8.57.0",
     "nuxt": "^3.10.3",
     "typescript": "5.4.3",
