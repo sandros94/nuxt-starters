@@ -13,11 +13,11 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.196",
+    "@iconify/json": "^2.2.197",
     "@nuxt/devtools": "^1.1.5",
-    "@nuxt/ui": "^2.15.0",
+    "@nuxt/ui": "^2.15.1",
     "@stefanobartoletti/eslint-config": "^1.2.4",
-    "@types/node": "^20.12.2",
+    "@types/node": "^20.12.4",
     "eslint": "^8.57.0",
     "nuxt": "^3.11.1",
     "typescript": "5.4.3",
