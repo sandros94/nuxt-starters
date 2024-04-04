@@ -12,6 +12,7 @@
   "pin": {
     "automerge": true
   },
+  "ignoreTests": true,
   "baseBranches": [
     "layer",
     "ui",
