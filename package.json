@@ -12,13 +12,12 @@
     "postinstall": "nuxt prepare",
     "preview": "nuxt preview"
   },
-  "dependencies": {
+  "devDependencies": {
     "@iconify/json": "^2.2.199",
     "@nuxt/devtools": "^1.1.5",
     "@nuxt/ui": "^2.15.1",
     "@stefanobartoletti/eslint-config": "^1.2.5",
     "@types/node": "^20.12.7",
-    "@vueuse/core": "^10.9.0",
     "@vueuse/nuxt": "^10.9.0",
     "eslint": "^8.57.0",
     "nuxt": "^3.11.2",
