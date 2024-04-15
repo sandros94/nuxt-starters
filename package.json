@@ -13,7 +13,7 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.200",
+    "@iconify/json": "^2.2.201",
     "@nuxt/devtools": "^1.1.5",
     "@nuxt/ui": "^2.15.2",
     "@stefanobartoletti/eslint-config": "^1.2.5",
