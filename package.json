@@ -17,7 +17,7 @@
     "@nuxt/devtools": "^1.2.0",
     "@nuxt/ui": "^2.15.2",
     "@stefanobartoletti/eslint-config": "^1.2.6",
-    "@types/node": "^20.12.7",
+    "@types/node": "^20.12.8",
     "@vueuse/nuxt": "^10.9.0",
     "eslint": "^8.57.0",
     "nuxt": "^3.11.2",
