@@ -19,7 +19,7 @@
     "@stefanobartoletti/eslint-config": "^1.2.6",
     "@types/node": "^20.12.8",
     "@vueuse/nuxt": "^10.9.0",
-    "eslint": "^8.57.0",
+    "eslint": "^9.2.0",
     "nuxt": "^3.11.2",
     "nuxt-markdown-render": "^2.0.2",
     "typescript": "5.4.5",
