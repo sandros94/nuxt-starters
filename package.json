@@ -19,7 +19,7 @@
     "@iconify/json": "^2.2.207",
     "@nuxt/devtools": "^1.2.0",
     "@stefanobartoletti/eslint-config": "^1.2.6",
-    "@types/node": "^20.12.9",
+    "@types/node": "^20.12.10",
     "eslint": "^8.57.0",
     "nuxt": "^3.11.2",
     "typescript": "5.4.5",
