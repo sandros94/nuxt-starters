@@ -13,7 +13,7 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "@nuxt/ui": "^2.15.2"
+    "@nuxt/ui": "^2.16.0"
   },
   "devDependencies": {
     "@iconify/json": "^2.2.207",
