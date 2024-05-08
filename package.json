@@ -16,7 +16,7 @@
   "devDependencies": {
     "@nuxt/devtools": "^1.2.0",
     "@stefanobartoletti/eslint-config": "^1.2.7",
-    "@types/node": "^20.12.10",
+    "@types/node": "^20.12.11",
     "eslint": "^8.57.0",
     "nuxt": "^3.11.2",
     "typescript": "5.4.5",
