@@ -16,7 +16,7 @@
     "@iconify/json": "^2.2.208",
     "@nuxt/devtools": "^1.2.0",
     "@nuxt/ui": "^2.16.0",
-    "@nuxt/eslint": "^0.3.10",
+    "@nuxt/eslint": "^0.3.12",
     "@types/node": "^20.12.11",
     "@vueuse/nuxt": "^10.9.0",
     "eslint": "^9.2.0",
