@@ -17,10 +17,6 @@ export default withNuxt(
       }],
 
       // Project specific overrides
-      '@typescript-eslint/ban-types': 'off',
-      '@typescript-eslint/no-dynamic-delete': 'off',
-      '@typescript-eslint/no-explicit-any': 'off',
-      'vue/multi-word-component-names': 'off',
     },
   },
 )
