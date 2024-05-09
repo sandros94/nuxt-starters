@@ -1,8 +1,8 @@
 // @ts-check
 import withNuxt from './.nuxt/eslint.config.mjs'
 
-export default withNuxt()
-  .override('nuxt/typescript', {
+export default withNuxt(
+  {
     rules: {
       '@typescript-eslint/no-unused-vars': 'warn',
       '@typescript-eslint/prefer-ts-expect-error': 'off',
@@ -15,5 +15,12 @@ export default withNuxt()
           max: 1,
         },
       }],
+
+      // Project specific overrides
+      '@typescript-eslint/ban-types': 'off',
+      '@typescript-eslint/no-dynamic-delete': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+      'vue/multi-word-component-names': 'off',
     },
-  })
+  },
+)
