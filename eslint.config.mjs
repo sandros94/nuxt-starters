@@ -1,8 +1,8 @@
 // @ts-check
 import withNuxt from './.nuxt/eslint.config.mjs'
 
-export default withNuxt()
-  .override('nuxt/typescript', {
+export default withNuxt(
+  {
     rules: {
       '@typescript-eslint/no-unused-vars': 'warn',
       '@typescript-eslint/prefer-ts-expect-error': 'off',
@@ -15,5 +15,8 @@ export default withNuxt()
           max: 1,
         },
       }],
+
+      // Project specific overrides
     },
-  })
+  },
+)
