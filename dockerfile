@@ -1,5 +1,5 @@
 # Build container
-FROM node:20.14.0-alpine as builder
+FROM node:20.15.0-alpine as builder
 
 # Enable Corepack
 RUN corepack enable
@@ -17,7 +17,7 @@ COPY . ./
 RUN pnpm run build
 
 # Final production container
-FROM node:20.14.0-alpine as runtime
+FROM node:20.15.0-alpine as runtime
 
 USER node
 
