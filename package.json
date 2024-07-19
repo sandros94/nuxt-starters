@@ -21,7 +21,7 @@
     "@nuxt/eslint": "^0.3.13",
     "@types/node": "^20.14.11",
     "eslint": "^9.7.0",
-    "nuxt": "^3.12.3",
+    "nuxt": "^3.12.4",
     "typescript": "5.5.3",
     "vue": "^3.4.32",
     "vue-router": "^4.4.0"
