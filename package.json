@@ -23,7 +23,7 @@
     "nuxt": "^3.12.4",
     "nuxt-markdown-render": "^2.1.0",
     "typescript": "5.5.3",
-    "vue": "^3.4.32",
+    "vue": "^3.4.33",
     "vue-router": "^4.4.0"
   }
 }
