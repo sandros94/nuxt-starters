@@ -22,7 +22,7 @@
     "eslint": "^9.7.0",
     "nuxt": "^3.12.4",
     "nuxt-markdown-render": "^2.1.0",
-    "typescript": "5.5.3",
+    "typescript": "5.5.4",
     "vue": "^3.4.33",
     "vue-router": "^4.4.0"
   }
