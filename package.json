@@ -20,6 +20,6 @@
     "nuxt": "^3.12.4",
     "typescript": "5.5.4",
     "vue": "^3.4.35",
-    "vue-router": "^4.4.1"
+    "vue-router": "^4.4.2"
   }
 }
