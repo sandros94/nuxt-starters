@@ -16,7 +16,7 @@
     "@nuxt/ui": "^2.18.4"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.236",
+    "@iconify/json": "^2.2.237",
     "@nuxt/devtools": "^1.3.9",
     "@nuxt/eslint": "^0.5.0",
     "@types/node": "^20.14.15",
