@@ -18,7 +18,7 @@
     "@nuxt/ui": "^2.18.4",
     "@nuxt/eslint": "^0.5.0",
     "@types/node": "^20.14.15",
-    "@vueuse/nuxt": "^10.11.1",
+    "@vueuse/nuxt": "^11.0.0",
     "eslint": "^9.9.0",
     "nuxt": "^3.12.4",
     "nuxt-markdown-render": "^2.1.0",
