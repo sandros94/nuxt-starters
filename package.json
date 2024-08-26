@@ -14,7 +14,7 @@
     "preview": "nuxt preview .playground"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^1.4.0",
+    "@nuxt/devtools": "^1.4.1",
     "@nuxt/eslint": "^0.5.2",
     "@types/node": "^20.16.1",
     "eslint": "^9.9.1",
