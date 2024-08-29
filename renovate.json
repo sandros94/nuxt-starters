@@ -17,6 +17,7 @@
     "layer",
     "ui",
     "v3",
-    "v3-base"
+    "v3-base",
+    "v4"
   ]
 }
