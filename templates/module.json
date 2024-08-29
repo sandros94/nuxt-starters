@@ -2,5 +2,5 @@
   "name": "module",
   "defaultDir": "nuxt-module",
   "url": "https://nuxt.com",
-  "tar": "https://codeload.github.com/nuxt/starter/tar.gz/refs/heads/module"
+  "tar": "https://codeload.github.com/sandros94/nuxt-starters/tar.gz/refs/heads/module"
 }
