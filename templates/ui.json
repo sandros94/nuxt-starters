@@ -2,5 +2,5 @@
   "name": "ui",
   "defaultDir": "nuxt-app",
   "url": "https://nuxt.com",
-  "tar": "https://codeload.github.com/sandros94/nuxt-starter/tar.gz/refs/heads/ui"
+  "tar": "https://codeload.github.com/sandros94/nuxt-starters/tar.gz/refs/heads/ui"
 }

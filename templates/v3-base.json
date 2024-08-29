@@ -2,5 +2,5 @@
   "name": "v3-base",
   "defaultDir": "nuxt-app",
   "url": "https://nuxt.com",
-  "tar": "https://codeload.github.com/sandros94/nuxt-starter/tar.gz/refs/heads/v3-base"
+  "tar": "https://codeload.github.com/sandros94/nuxt-starters/tar.gz/refs/heads/v3-base"
 }
