@@ -17,7 +17,7 @@
     "@nuxt/devtools": "^1.4.1",
     "@nuxt/ui": "^2.18.4",
     "@nuxt/eslint": "^0.5.5",
-    "@types/node": "^20.16.3",
+    "@types/node": "^20.16.4",
     "@vueuse/nuxt": "^11.0.3",
     "eslint": "^9.9.1",
     "nuxt": "^3.13.0",
