@@ -19,7 +19,7 @@
     "@nuxt/ui": "^2.18.4",
     "@types/node": "^20.16.5",
     "@vueuse/nuxt": "^11.0.3",
-    "eslint": "^9.9.1",
+    "eslint": "^9.10.0",
     "nuxt": "^3.13.1",
     "tailwind-variants": "^0.2.1",
     "typescript": "5.5.4",
