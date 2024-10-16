@@ -1,6 +1,6 @@
-# Nuxt UI Minimal Starter
+# Sandros94's Nuxt v4 Minimal Starter
 
-Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more.
+Look at [starters repo](https://github.com/sandros94/nuxt-starters) to learn more.
 
 ## Setup
 
