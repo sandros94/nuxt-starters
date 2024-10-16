@@ -18,6 +18,6 @@ Or set `NUXI_INIT_REGISTRY=https://github.com/Sandros94/nuxt-starters` as your e
 - `module-devtools`: default
 - `module`: default + pnpm workspace
 - `ui`: default + eslint
-- `v4`: default + ui + vueuse + eslint
+- `v4`: default + ui + eslint
 - `v3`: default + ui + vueuse + eslint (default one if no other template is specified)
 - `v3-base`: default + eslint
