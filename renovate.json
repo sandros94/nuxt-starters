@@ -14,11 +14,8 @@
   },
   "ignoreTests": true,
   "baseBranches": [
-    "layer",
     "module",
-    "ui",
     "v3",
-    "v3-base",
     "v4"
   ]
 }
