@@ -1,17 +1,17 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// https://nuxt.com/docs/guide/directory-structure/nuxt.config#nuxt-config-file
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+
+  extends: ['gh:sandros94/ui/main#da784869b2c65ae87b60cf720a9c34251383818f'],
+
   modules: [
     '@nuxt/eslint',
-    '@vueuse/nuxt',
-    '@nuxt/ui',
   ],
+
   eslint: {
     config: {
       stylistic: true,
     },
   },
-  ui: {
-    icons: {},
-  },
+
+  devtools: { enabled: true },
 })
