@@ -14,4 +14,12 @@
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
   },
+
+  // Bind css files to TailwindCSS
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  }
 }
