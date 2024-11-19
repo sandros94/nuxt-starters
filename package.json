@@ -16,7 +16,7 @@
     "@nuxt/devtools": "^1.6.0",
     "@nuxt/eslint": "^0.7.1",
     "@nuxt/fonts": "^0.10.2",
-    "@nuxt/ui": "^3.0.0-alpha.8",
+    "@nuxt/ui": "^3.0.0-alpha.9",
     "eslint": "^9.15.0",
     "nuxt": "^3.14.159",
     "vue-router": "^4.4.5",
