@@ -1,8 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "baseBranches": [
+    "module",
+    "v3",
+    "v4"
+  ],
   "extends": [
     "github>nuxt/renovate-config-nuxt"
   ],
+  "ignoreTests": true,
   "minor": {
     "automerge": true
   },
@@ -12,10 +18,5 @@
   "pin": {
     "automerge": true
   },
-  "ignoreTests": true,
-  "baseBranches": [
-    "module",
-    "v3",
-    "v4"
-  ]
+  "updatePinnedDependencies": false
 }
