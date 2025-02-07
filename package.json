@@ -14,7 +14,7 @@
     "typecheck": "nuxt typecheck"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^1.7.0",
+    "@nuxt/devtools": "^2.0.0",
     "@nuxt/eslint": "^1.0.1",
     "@nuxt/ui": "^3.0.0-alpha.12",
     "@nuxtjs/mdc": "^0.13.3",
