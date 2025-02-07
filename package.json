@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "^1.7.0",
-    "@nuxt/eslint": "^0.7.6",
+    "@nuxt/eslint": "^1.0.1",
     "@nuxt/fonts": "^0.10.3",
     "@nuxt/ui": "^3.0.0-alpha.12",
     "eslint": "^9.19.0",
