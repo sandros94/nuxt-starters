@@ -17,7 +17,7 @@
     "@nuxt/devtools": "^2.3.0",
     "@nuxt/eslint": "^1.2.0",
     "@nuxt/ui": "^3.0.0",
-    "@nuxtjs/mdc": "^0.15.0",
+    "@nuxtjs/mdc": "^0.16.0",
     "eslint": "^9.22.0",
     "nuxt": "^3.16.0",
     "typescript": "^5.8.2",
