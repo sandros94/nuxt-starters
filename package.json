@@ -19,7 +19,7 @@
     "@nuxt/ui": "^3.0.2",
     "@nuxtjs/mdc": "^0.16.1",
     "eslint": "^9.23.0",
-    "nuxt": "^3.16.1",
+    "nuxt": "^3.16.2",
     "typescript": "^5.8.2",
     "vue-router": "^4.5.0",
     "vue-tsc": "^2.2.8"
