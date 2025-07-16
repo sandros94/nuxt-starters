@@ -9,6 +9,6 @@
   },
   "dependencies": {
     "my-module": "latest",
-    "nuxt": "^3.17.7"
+    "nuxt": "^4.0.0"
   }
 }
