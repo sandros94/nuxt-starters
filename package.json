@@ -15,17 +15,17 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "^2.6.2",
-    "@nuxt/eslint": "^1.7.1",
+    "@nuxt/eslint": "^1.8.0",
     "@nuxt/ui": "^3.3.0",
     "@nuxtjs/mdc": "^0.17.2",
-    "eslint": "^9.32.0",
+    "eslint": "^9.33.0",
     "nuxt": "^4.0.3",
-    "typescript": "^5.8.3",
+    "typescript": "^5.9.2",
     "vue-router": "^4.5.1",
-    "vue-tsc": "^3.0.4"
+    "vue-tsc": "^3.0.5"
   },
   "packageManager": "pnpm@9.15.3",
   "resolutions": {
-    "vue-tsc": "^3.0.4"
+    "vue-tsc": "^3.0.5"
   }
 }
