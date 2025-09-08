@@ -16,9 +16,9 @@
   "devDependencies": {
     "@nuxt/devtools": "^2.6.3",
     "@nuxt/eslint": "^1.9.0",
-    "@nuxt/ui": "^3.3.2",
-    "@nuxtjs/mdc": "^0.17.2",
-    "eslint": "^9.34.0",
+    "@nuxt/ui": "^3.3.3",
+    "@nuxtjs/mdc": "^0.17.3",
+    "eslint": "^9.35.0",
     "nuxt": "^4.1.1",
     "typescript": "^5.9.2",
     "vue-router": "^4.5.1",
