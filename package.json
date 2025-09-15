@@ -17,15 +17,15 @@
     "@nuxt/devtools": "^2.6.3",
     "@nuxt/eslint": "^1.9.0",
     "@nuxt/ui": "^3.3.3",
-    "@nuxtjs/mdc": "^0.17.3",
+    "@nuxtjs/mdc": "^0.17.4",
     "eslint": "^9.35.0",
     "nuxt": "^4.1.2",
     "typescript": "^5.9.2",
     "vue-router": "^4.5.1",
-    "vue-tsc": "^3.0.6"
+    "vue-tsc": "^3.0.7"
   },
   "packageManager": "pnpm@9.15.3",
   "resolutions": {
-    "vue-tsc": "^3.0.6"
+    "vue-tsc": "^3.0.7"
   }
 }
