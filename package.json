@@ -14,11 +14,11 @@
     "typecheck": "nuxt typecheck"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^2.6.3",
+    "@nuxt/devtools": "^2.6.5",
     "@nuxt/eslint": "^1.9.0",
     "@nuxt/ui": "^3.3.4",
     "@nuxtjs/mdc": "^0.17.4",
-    "eslint": "^9.35.0",
+    "eslint": "^9.36.0",
     "nuxt": "^4.1.2",
     "typescript": "^5.9.2",
     "vue-router": "^4.5.1",
