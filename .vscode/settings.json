@@ -1,4 +1,8 @@
 {
+  // Use workspace version of TypeScript
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+
   // Enable ESLint
   "eslint.enable": true,
 
