@@ -11,21 +11,19 @@
     "lint:fix": "eslint . --fix",
     "postinstall": "nuxt prepare",
     "preview": "nuxt preview",
-    "typecheck": "nuxt typecheck"
+    "test:types": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.68",
+    "@iconify-json/simple-icons": "^1.2.53",
+    "@nuxt/ui": "^4.0.0",
+    "nuxt": "^4.1.2"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^2.6.5",
     "@nuxt/eslint": "^1.9.0",
-    "@nuxt/ui": "^3.3.5",
-    "@nuxtjs/mdc": "^0.17.4",
     "eslint": "^9.36.0",
-    "nuxt": "^4.1.2",
     "typescript": "^5.9.2",
-    "vue-router": "^4.5.1",
     "vue-tsc": "^3.1.0"
   },
-  "packageManager": "pnpm@9.15.3",
-  "resolutions": {
-    "vue-tsc": "^3.1.0"
-  }
+  "packageManager": "pnpm@10.17.1"
 }

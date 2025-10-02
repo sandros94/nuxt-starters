@@ -1,13 +1,20 @@
-# Sandros94's Nuxt v4 Minimal Starter
+# Sandros94's Nuxt UI Minimal Starter
 
-Look at [starters repo](https://github.com/sandros94/nuxt-starters) to learn more.
+Based on the official [Nuxt UI starter template](https://github.com/nuxt-ui-templates/starter).
+
+Look at my [starters repo](https://github.com/sandros94/nuxt-starters) for more templates.
+
+## Quick Start
+
+```bash [Terminal]
+npm create nuxt@latest test-nuxt-surrealdb -- --packageManager pnpm -t gh:sandros94/nuxt-starters#ui --gitInit --no-modules
+```
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-# pnpm
 pnpm install
 ```
 
@@ -16,8 +23,7 @@ pnpm install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# pnpm
-pnpm run dev
+pnpm dev
 ```
 
 ## Production
@@ -25,15 +31,13 @@ pnpm run dev
 Build the application for production:
 
 ```bash
-# pnpm
-pnpm run build
+pnpm build
 ```
 
 Locally preview production build:
 
 ```bash
-# pnpm
-pnpm run preview
+pnpm preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

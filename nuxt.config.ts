@@ -3,18 +3,15 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/ui',
-    '@nuxtjs/mdc',
   ],
 
-  devtools: { enabled: true },
-
-  css: [
-    'assets/css/main.css',
-  ],
-
-  future: {
-    compatibilityVersion: 4,
+  devtools: {
+    enabled: true
   },
+
+  css: ['~/assets/css/main.css'],
+
+  compatibilityDate: '2025-01-15',
 
   eslint: {
     config: {

@@ -15,11 +15,20 @@
     "source.organizeImports": "never"
   },
 
-  // Bind css files to TailwindCSS
+  // Tailwind CSS
   "files.associations": {
     "*.css": "tailwindcss"
   },
   "editor.quickSuggestions": {
     "strings": "on"
-  }
+  },
+  "tailwindCSS.classAttributes": [
+    "class",
+    "active-class",
+    "inactive-class",
+    "ui"
+  ],
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ]
 }

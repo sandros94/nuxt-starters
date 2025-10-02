@@ -1,4 +1,4 @@
-# .gitignore v1.4.0
+# .gitignore v1.5.0
 # https://gist.github.com/Sandros94/7f3dc1539c8f5905c495aa1bb417589c
 
 # Dependencies
@@ -44,11 +44,13 @@ logs
 *.log
 
 # VSCode
+.history
 .vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/mcp.json
 !.vscode/settings.json
 !.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 !.vscode/*.code-snippets
 
 # Intellij idea
