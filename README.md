@@ -7,7 +7,7 @@ The main goal of this project is to streamline the bootstrapping of all my proje
 
 Execute it as using [`unjs/giget`](https://github.com/unjs/giget) templating:
 ```bash
-npm create nuxt@latest test-nuxt-surrealdb -- --packageManager pnpm -t gh:sandros94/nuxt-starters#ui --gitInit --no-modules
+npm create nuxt@latest my-project -- --packageManager pnpm -t gh:sandros94/nuxt-starters#ui --gitInit --no-modules
 ```
 
 Or set `NUXI_INIT_REGISTRY=https://github.com/Sandros94/nuxt-starters` as your env variable to default to my templates.
