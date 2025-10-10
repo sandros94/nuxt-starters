@@ -11,7 +11,7 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  compatibilityDate: '2025-01-15',
+  compatibilityDate: '2025-09-30',
 
   eslint: {
     config: {
