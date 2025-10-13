@@ -14,7 +14,7 @@
     "test:types": "nuxt typecheck"
   },
   "dependencies": {
-    "@iconify-json/lucide": "^1.2.68",
+    "@iconify-json/lucide": "^1.2.69",
     "@iconify-json/simple-icons": "^1.2.54",
     "@nuxt/ui": "^4.0.1",
     "nuxt": "^4.1.3",
