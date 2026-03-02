@@ -14,15 +14,15 @@
     "test:types": "nuxt typecheck"
   },
   "dependencies": {
-    "@iconify-json/lucide": "^1.2.93",
+    "@iconify-json/lucide": "^1.2.95",
     "@iconify-json/simple-icons": "^1.2.71",
-    "@nuxt/ui": "^4.4.0",
+    "@nuxt/ui": "^4.5.0",
     "nuxt": "^4.3.1",
-    "vue": "^3.5.28",
+    "vue": "^3.5.29",
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^1.15.1",
+    "@nuxt/eslint": "^1.15.2",
     "eslint": "^9.39.3",
     "typescript": "^5.9.3",
     "vue-tsc": "^3.2.5"
