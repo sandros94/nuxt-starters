@@ -14,9 +14,9 @@
     "test:types": "nuxt typecheck"
   },
   "dependencies": {
-    "@iconify-json/lucide": "^1.2.112",
+    "@iconify-json/lucide": "^1.2.114",
     "@iconify-json/simple-icons": "^1.2.86",
-    "@nuxt/ui": "^4.8.2",
+    "@nuxt/ui": "^4.9.0",
     "nuxt": "^4.4.8",
     "vue": "^3.5.38",
     "vue-router": "^4.6.4"
