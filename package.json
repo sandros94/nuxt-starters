@@ -1,31 +1,48 @@
 {
-  "name": "nuxt-app",
-  "type": "module",
+  "name": "nuxt-v5",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "clear": "nuxt cleanup",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "postinstall": "nuxt prepare",
+    "lint": "oxlint . && oxfmt --check .",
+    "fmt": "oxlint --fix . && oxfmt .",
+    "typecheck": "nuxt prepare && vue-tsgo --build",
     "preview": "nuxt preview",
-    "test:types": "nuxt typecheck"
-  },
-  "dependencies": {
-    "@iconify-json/lucide": "^1.2.114",
-    "@iconify-json/simple-icons": "^1.2.86",
-    "@nuxt/ui": "^4.9.0",
-    "nuxt": "^4.4.8",
-    "vue": "^3.5.38",
-    "vue-router": "^5.1.0"
+    "postinstall": "nuxt prepare && pnpm simple-git-hooks",
+    "test": "vitest run",
+    "test:unit": "vitest run --project unit",
+    "test:e2e": "vitest run --project e2e",
+    "test:nuxt": "vitest run --project nuxt"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^1.16.0",
-    "eslint": "^9.39.4",
-    "typescript": "^5.9.3",
-    "vue-tsc": "^3.3.5"
+    "@iconify-json/lucide": "npm:@iconify-json/lucide@^1.2.114",
+    "@nuxt/icon": "npm:@nuxt/icon@2.2.3",
+    "@nuxt/test-utils": "npm:@nuxt/test-utils@4.0.3",
+    "@nuxt/ui": "npm:@nuxt/ui@^4.9.0",
+    "@types/node": "npm:@types/node@^24",
+    "@typescript/native-preview": "npm:@typescript/native-preview@7.0.0-dev.20260624.1",
+    "@vue/test-utils": "npm:@vue/test-utils@^2.4.11",
+    "defu": "^6.1.7",
+    "h3": "npm:h3@2.0.1-rc.22",
+    "happy-dom": "npm:happy-dom@^20.10.6",
+    "nitro": "https://pkg.pr.new/nitro@420be01",
+    "nuxt": "npm:nuxt-nightly@5.0.0-29558834.5284bce6",
+    "oxfmt": "npm:oxfmt@^0.56.0",
+    "oxlint": "npm:oxlint@^1.71.0",
+    "playwright-core": "npm:playwright-core@^1.61.1",
+    "simple-git-hooks": "npm:simple-git-hooks@^2.13.1",
+    "tailwindcss": "npm:tailwindcss@^4.3.1",
+    "testcontainers": "npm:testcontainers@^12.0.3",
+    "typescript": "^6.0.3",
+    "vitest": "npm:vitest@^4.1.9",
+    "vue": "npm:vue@^3.5.39",
+    "vue-router": "npm:vue-router@5.0.4",
+    "vue-tsc": "npm:vue-tsc@^3.3.5",
+    "vue-tsgo": "npm:vue-tsgo@^0.2.2"
   },
-  "packageManager": "pnpm@10.18.2"
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint && pnpm typecheck"
+  },
+  "packageManager": "pnpm@11.9.0"
 }
