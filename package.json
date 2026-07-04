@@ -30,6 +30,7 @@
     "nuxt": "npm:nuxt-nightly@5.0.0-29558834.5284bce6",
     "oxfmt": "npm:oxfmt@^0.56.0",
     "oxlint": "npm:oxlint@^1.71.0",
+    "oxlint-tsgolint": "^0.24.0",
     "playwright-core": "npm:playwright-core@^1.61.1",
     "simple-git-hooks": "npm:simple-git-hooks@^2.13.1",
     "tailwindcss": "npm:tailwindcss@^4.3.1",
