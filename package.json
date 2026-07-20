@@ -19,7 +19,7 @@
     "test:browser": "playwright test"
   },
   "dependencies": {
-    "@iconify-json/lucide": "npm:@iconify-json/lucide@^1.2.114",
+    "@iconify-json/lucide": "npm:@iconify-json/lucide@^1.2.118",
     "@nuxt/ui": "npm:@nuxt/ui@^4.10.0",
     "nuxt": "npm:nuxt@~4.5.0",
     "tailwindcss": "npm:tailwindcss@^4.3.3",
@@ -27,12 +27,12 @@
   },
   "devDependencies": {
     "@dxup/unimport": "npm:@dxup/unimport@^0.1.2",
-    "@golar/vue": "npm:@golar/vue@^0.1.9",
+    "@golar/vue": "npm:@golar/vue@^0.1.10",
     "@nuxt/test-utils": "npm:@nuxt/test-utils@4.0.3",
     "@playwright/test": "npm:@playwright/test@^1.61.1",
     "@vue/test-utils": "npm:@vue/test-utils@^2.4.11",
     "golar": "npm:golar@^0.1.10",
-    "happy-dom": "npm:happy-dom@^20.10.6",
+    "happy-dom": "npm:happy-dom@^20.11.0",
     "oxfmt": "npm:oxfmt@^0.59.0",
     "oxlint": "npm:oxlint@^1.74.0",
     "oxlint-tsgolint": "npm:oxlint-tsgolint@^0.25.0",

@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@iconify-json/lucide':
-        specifier: npm:@iconify-json/lucide@^1.2.114
+        specifier: npm:@iconify-json/lucide@^1.2.118
         version: 1.2.118
       '@nuxt/ui':
         specifier: npm:@nuxt/ui@^4.10.0
@@ -28,7 +28,7 @@ importers:
         specifier: npm:@dxup/unimport@^0.1.2
         version: 0.1.2
       '@golar/vue':
-        specifier: npm:@golar/vue@^0.1.9
+        specifier: npm:@golar/vue@^0.1.10
         version: 0.1.10
       '@nuxt/test-utils':
         specifier: npm:@nuxt/test-utils@4.0.3
@@ -43,7 +43,7 @@ importers:
         specifier: npm:golar@^0.1.10
         version: 0.1.10
       happy-dom:
-        specifier: npm:happy-dom@^20.10.6
+        specifier: npm:happy-dom@^20.11.0
         version: 20.11.0
       oxfmt:
         specifier: npm:oxfmt@^0.59.0
