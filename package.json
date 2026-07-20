@@ -1,31 +1,49 @@
 {
   "name": "nuxt-app",
-  "type": "module",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "clear": "nuxt cleanup",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "postinstall": "nuxt prepare",
+    "lint": "oxlint . && oxfmt --check .",
+    "fmt": "oxlint --fix . && oxfmt .",
+    "typecheck": "nuxt typecheck --checker=golar",
     "preview": "nuxt preview",
-    "test:types": "nuxt typecheck"
+    "postinstall": "nuxt prepare && pnpm simple-git-hooks",
+    "test": "vitest run",
+    "test:unit": "vitest run --project unit",
+    "test:e2e": "vitest run --project e2e",
+    "test:nuxt": "vitest run --project nuxt",
+    "test:browser": "playwright test"
   },
   "dependencies": {
-    "@iconify-json/lucide": "^1.2.118",
-    "@iconify-json/simple-icons": "^1.2.90",
-    "@nuxt/ui": "^4.10.0",
-    "nuxt": "^4.5.0",
-    "vue": "^3.5.40",
-    "vue-router": "^5.2.0"
+    "@iconify-json/lucide": "npm:@iconify-json/lucide@^1.2.114",
+    "@nuxt/ui": "npm:@nuxt/ui@^4.10.0",
+    "nuxt": "npm:nuxt@~4.5.0",
+    "tailwindcss": "npm:tailwindcss@^4.3.3",
+    "vue": "npm:vue@^3.5.40"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^1.16.0",
-    "eslint": "^9.39.5",
-    "typescript": "^5.9.3",
-    "vue-tsc": "^3.3.7"
+    "@dxup/unimport": "npm:@dxup/unimport@^0.1.2",
+    "@golar/vue": "npm:@golar/vue@^0.1.9",
+    "@nuxt/test-utils": "npm:@nuxt/test-utils@4.0.3",
+    "@playwright/test": "npm:@playwright/test@^1.61.1",
+    "@vue/test-utils": "npm:@vue/test-utils@^2.4.11",
+    "golar": "npm:golar@^0.1.10",
+    "happy-dom": "npm:happy-dom@^20.10.6",
+    "oxfmt": "npm:oxfmt@^0.59.0",
+    "oxlint": "npm:oxlint@^1.74.0",
+    "oxlint-tsgolint": "npm:oxlint-tsgolint@^0.25.0",
+    "playwright-core": "npm:playwright-core@^1.61.1",
+    "simple-git-hooks": "npm:simple-git-hooks@^2.13.1",
+    "typescript": "npm:typescript@^7.0.2",
+    "vitest": "npm:vitest@^4.1.10",
+    "vue-tsc": "npm:vue-tsc@^3.3.7"
   },
-  "packageManager": "pnpm@10.18.2"
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint && pnpm typecheck"
+  },
+  "packageManager": "pnpm@11.15.1"
 }

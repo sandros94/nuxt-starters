@@ -1,21 +1,18 @@
-// https://nuxt.com/docs/guide/directory-structure/nuxt.config#nuxt-config-file
 export default defineNuxtConfig({
-  modules: [
-    '@nuxt/eslint',
-    '@nuxt/ui',
-  ],
+  compatibilityDate: 'latest',
+  devtools: { enabled: true },
 
-  devtools: {
-    enabled: true,
-  },
+  modules: ['@nuxt/ui'],
 
   css: ['~/assets/css/main.css'],
 
-  compatibilityDate: '2025-09-30',
+  experimental: {
+    typescriptPlugin: true,
+  },
 
-  eslint: {
-    config: {
-      stylistic: true,
+  $test: {
+    nitro: {
+      preset: 'node-server',
     },
   },
 })

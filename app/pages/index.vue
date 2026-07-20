@@ -4,9 +4,10 @@
       <template #header>
         <div class="flex justify-between">
           <h1>Welcome to sandros94's Nuxt UI Starter</h1>
-          <ColorScheme><USelect v-model="$colorMode.preference" :options="['system', 'light', 'dark']" /></ColorScheme>
         </div>
       </template>
+
+      <AppGreeting />
     </UCard>
   </UContainer>
 </template>

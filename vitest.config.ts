@@ -1,0 +1,47 @@
+import { defineConfig } from 'vitest/config'
+import { defineVitestProject } from '@nuxt/test-utils/config'
+
+const rootDir = import.meta.dirname
+
+const alias = {
+  '~': `${rootDir}/app`,
+  '~~': rootDir,
+  '#shared': `${rootDir}/shared`,
+  '#server': `${rootDir}/server`,
+}
+
+export default defineConfig({
+  resolve: {
+    tsconfigPaths: true,
+    alias,
+  },
+
+  test: {
+    projects: [
+      {
+        resolve: {
+          alias,
+        },
+        test: {
+          name: 'unit',
+          include: ['test/unit/**/*.{test,spec}.ts'],
+          environment: 'node',
+        },
+      },
+      await defineVitestProject({
+        test: {
+          name: 'nuxt',
+          include: ['test/nuxt/**/*.{test,spec}.ts'],
+          environment: 'nuxt',
+        },
+      }),
+      {
+        test: {
+          name: 'e2e',
+          include: ['test/e2e/**/*.{test,spec}.ts'],
+          environment: 'node',
+        },
+      },
+    ],
+  },
+})

@@ -7,7 +7,7 @@ Look at my [starters repo](https://github.com/sandros94/nuxt-starters) for more 
 ## Quick Start
 
 ```bash [Terminal]
-npm create nuxt@latest test-nuxt-surrealdb -- --packageManager pnpm -t gh:sandros94/nuxt-starters#ui --gitInit --no-modules
+npm create nuxt@latest test-nuxt-ui -- --packageManager pnpm -t gh:sandros94/nuxt-starters#ui --gitInit --no-modules
 ```
 
 ## Setup

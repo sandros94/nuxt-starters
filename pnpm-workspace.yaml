@@ -1,6 +1,12 @@
-ignoredBuiltDependencies:
-  - '@parcel/watcher'
-  - '@tailwindcss/oxide'
-  - esbuild
-  - unrs-resolver
-  - vue-demi
+minimumReleaseAgeStrict: false
+
+allowBuilds:
+  '@parcel/watcher': false
+  'better-sqlite3': true
+  cpu-features: false
+  esbuild: false
+  protobufjs: false
+  'sharp@0.34.5': true
+  simple-git-hooks: true
+  ssh2: false
+  vue-demi: false
