@@ -19,7 +19,7 @@
     "test:browser": "playwright test"
   },
   "dependencies": {
-    "@iconify-json/lucide": "npm:@iconify-json/lucide@^1.2.119",
+    "@iconify-json/lucide": "npm:@iconify-json/lucide@^1.2.120",
     "@nuxt/ui": "npm:@nuxt/ui@^4.10.0",
     "nuxt": "npm:nuxt@~4.5.0",
     "tailwindcss": "npm:tailwindcss@^4.3.3",
