@@ -1,4 +1,8 @@
-minimumReleaseAgeStrict: false
+minimumReleaseAgeStrict: true
+
+minimumReleaseAgeExclude:
+  - 'nuxt'
+  - '@nuxt/*'
 
 allowBuilds:
   '@parcel/watcher': false
