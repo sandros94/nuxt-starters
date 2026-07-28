@@ -35,7 +35,7 @@
     "happy-dom": "npm:happy-dom@^20.11.1",
     "oxfmt": "npm:oxfmt@^0.60.0",
     "oxlint": "npm:oxlint@^1.75.0",
-    "oxlint-tsgolint": "npm:oxlint-tsgolint@^0.25.0",
+    "oxlint-tsgolint": "npm:oxlint-tsgolint@^7.0.2001",
     "playwright-core": "npm:playwright-core@^1.62.0",
     "simple-git-hooks": "npm:simple-git-hooks@^2.13.1",
     "typescript": "npm:typescript@^7.0.2",
