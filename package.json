@@ -40,7 +40,7 @@
     "@nuxt/kit": "^4.5.1"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^3.3.1",
+    "@nuxt/devtools": "^3.4.0",
     "@nuxt/eslint-config": "^1.16.0",
     "@nuxt/module-builder": "^1.0.3",
     "@nuxt/schema": "^4.5.1",
@@ -49,6 +49,6 @@
     "eslint": "^9.39.5",
     "nuxt": "^4.5.1",
     "vitest": "^4.1.10",
-    "vue-tsc": "^3.3.8"
+    "vue-tsc": "^3.3.9"
   }
 }
