@@ -19,7 +19,7 @@
     "test:browser": "playwright test"
   },
   "dependencies": {
-    "@iconify-json/lucide": "npm:@iconify-json/lucide@^1.2.122",
+    "@iconify-json/lucide": "npm:@iconify-json/lucide@^1.2.123",
     "@nuxt/ui": "npm:@nuxt/ui@^4.10.0",
     "nuxt": "npm:nuxt@^4.5.2",
     "tailwindcss": "npm:tailwindcss@^4.3.3",
@@ -33,14 +33,14 @@
     "@vue/test-utils": "npm:@vue/test-utils@^2.4.11",
     "golar": "npm:golar@^0.1.10",
     "happy-dom": "npm:happy-dom@^20.11.2",
-    "oxfmt": "npm:oxfmt@^0.62.0",
-    "oxlint": "npm:oxlint@^1.77.0",
+    "oxfmt": "npm:oxfmt@^0.63.0",
+    "oxlint": "npm:oxlint@^1.78.0",
     "oxlint-tsgolint": "npm:oxlint-tsgolint@~7.0.2001",
     "playwright-core": "npm:playwright-core@^1.62.1",
     "simple-git-hooks": "npm:simple-git-hooks@^2.13.1",
     "typescript": "npm:typescript@^7.0.2",
     "vitest": "npm:vitest@^4.1.10",
-    "vue-tsc": "npm:vue-tsc@^3.3.9"
+    "vue-tsc": "npm:vue-tsc@^3.3.10"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint && pnpm typecheck"
