@@ -14,5 +14,5 @@ Or set `NUXI_INIT_REGISTRY=https://github.com/Sandros94/nuxt-starters` as your e
 
 # Templates available
 
-- `module`: default + pnpm workspace
-- `ui`: default + ui + eslint
+- `module`: Nuxt module + playground, pnpm workspace, oxc, vitest + playwright, uppt releases
+- `ui`: Nuxt app + `@nuxt/ui` + tailwindcss, oxc, vitest + playwright
