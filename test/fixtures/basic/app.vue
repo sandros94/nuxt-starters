@@ -1,6 +1,5 @@
 <template>
-  <div>basic</div>
+  <div>
+    <MyModuleGreeting />
+  </div>
 </template>
-
-<script setup>
-</script>

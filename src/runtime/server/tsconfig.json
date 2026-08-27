@@ -1,3 +1,9 @@
 {
+  // Server runtime code resolves `#imports` against nitro, not the Vue app —
+  // hence its own tsconfig, mirroring how Nuxt splits app/server/shared.
   "extends": "../../../.nuxt/tsconfig.server.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": ["./**/*.ts"]
 }

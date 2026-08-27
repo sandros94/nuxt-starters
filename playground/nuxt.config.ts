@@ -1,5 +1,14 @@
 export default defineNuxtConfig({
-  modules: ['../src/module'],
-  myModule: {},
+  compatibilityDate: 'latest',
   devtools: { enabled: true },
+
+  modules: ['my-module'],
+
+  myModule: {},
+
+  $test: {
+    nitro: {
+      preset: 'node-server',
+    },
+  },
 })

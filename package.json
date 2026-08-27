@@ -1,54 +1,77 @@
 {
   "name": "my-module",
-  "resolutions": {
-    "my-module": "workspace:*"
-  },
   "version": "0.0.0",
   "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
   "license": "MIT",
-  "type": "module",
   "author": {
     "name": "Sandro Circi",
     "email": "sandro.circi@digitoolmedia.com"
   },
-  "exports": {
-    ".": {
-      "types": "./dist/types.d.ts",
-      "import": "./dist/module.mjs",
-      "require": "./dist/module.cjs"
-    }
-  },
-  "main": "./dist/module.cjs",
-  "types": "./dist/types.d.ts",
+  "repository": "your-org/my-module",
   "files": [
     "dist"
   ],
+  "type": "module",
+  "main": "./dist/module.mjs",
+  "types": "./dist/types.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.mts",
+      "import": "./dist/module.mjs"
+    }
+  },
   "scripts": {
-    "prepack": "nuxt-module-build build",
-    "dev": "nuxi dev playground",
-    "dev:build": "nuxi build playground",
-    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
-    "release": "nr lint && nr prepack && changelogen --release --push --publish",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "build": "nuxt-module-build build",
+    "dev": "nuxt dev playground",
+    "dev:build": "nuxt build playground",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxt prepare playground && nuxt prepare test/fixtures/basic",
+    "lint": "oxlint . && oxfmt --check .",
+    "fmt": "oxlint --fix . && oxfmt .",
+    "prepack": "pnpm build",
+    "postinstall": "pnpm dev:prepare && pnpm simple-git-hooks",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p src/runtime/server && pnpm -F my-module-playground typecheck",
     "test": "vitest run",
-    "test:watch": "vitest watch",
-    "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
+    "test:unit": "vitest run --project unit",
+    "test:nuxt": "vitest run --project nuxt",
+    "test:e2e": "vitest run --project e2e",
+    "test:browser": "playwright test"
   },
   "dependencies": {
-    "@nuxt/kit": "^4.5.2"
+    "@nuxt/kit": "npm:@nuxt/kit@^4.5.2",
+    "defu": "npm:defu@^6.1.7",
+    "h3": "npm:h3@^1.15.4"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^3.4.2",
-    "@nuxt/eslint-config": "^1.17.0",
-    "@nuxt/module-builder": "^1.0.3",
-    "@nuxt/schema": "^4.5.2",
-    "@nuxt/test-utils": "^4.1.0",
-    "changelogen": "^0.6.2",
-    "eslint": "^9.39.5",
-    "nuxt": "^4.5.2",
-    "vitest": "^4.1.11",
-    "vue-tsc": "^3.3.11"
-  }
+    "@nuxt/module-builder": "npm:@nuxt/module-builder@^1.0.3",
+    "@nuxt/schema": "npm:@nuxt/schema@^4.5.2",
+    "@nuxt/test-utils": "npm:@nuxt/test-utils@4.1.0",
+    "@playwright/test": "npm:@playwright/test@^1.62.1",
+    "@vue/test-utils": "npm:@vue/test-utils@^2.4.11",
+    "happy-dom": "npm:happy-dom@^20.11.2",
+    "nuxt": "npm:nuxt@^4.5.2",
+    "oxfmt": "npm:oxfmt@^0.62.0",
+    "oxlint": "npm:oxlint@^1.77.0",
+    "oxlint-tsgolint": "npm:oxlint-tsgolint@~7.0.2001",
+    "playwright-core": "npm:playwright-core@^1.62.1",
+    "simple-git-hooks": "npm:simple-git-hooks@^2.13.1",
+    "typescript": "npm:typescript@^6.0.3",
+    "vitest": "npm:vitest@^4.1.11",
+    "vue": "npm:vue@^3.5.41"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint && pnpm typecheck"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.17.0",
+      "onFail": "download"
+    },
+    "runtime": {
+      "name": "node",
+      "version": ">=24.17.0",
+      "onFail": "error"
+    }
+  },
+  "packageManager": "pnpm@11.17.0"
 }
