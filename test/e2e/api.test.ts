@@ -9,7 +9,8 @@ describe('e2e: hello API + home page', async () => {
   })
 
   it('GET /api/hello?name=Ada greets the name', async () => {
-    const res = await $fetch('/api/hello', { query: { name: 'Ada' } })
-    expect(res.message).toBe('Hello, Ada!')
+    expect(await $fetch('/api/hello', { query: { name: 'Ada' } })).toEqual({
+      message: 'Hello, Ada!',
+    })
   })
 })
