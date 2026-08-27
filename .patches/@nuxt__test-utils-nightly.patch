@@ -1,0 +1,76 @@
+diff --git a/dist/runtime/shared/h3-v2.mjs b/dist/runtime/shared/h3-v2.mjs
+index 130415e55ed448059cc6700a99a95ceefcaa42a8..51a45036c82b5dac98b303c9624803de55039a85 100644
+--- a/dist/runtime/shared/h3-v2.mjs
++++ b/dist/runtime/shared/h3-v2.mjs
+@@ -1,6 +1,6 @@
+ //#region src/runtime/shared/h3-v2.ts
+ async function createFetchForH3V2() {
+-	const { H3 } = await import("h3-next/generic");
++	const { H3 } = await import("h3/generic");
+ 	const h3App = new H3();
+ 	const registry = /* @__PURE__ */ new Set();
+ 	const _fetch = fetch;
+diff --git a/dist/vitest-environment.mjs b/dist/vitest-environment.mjs
+index 01016dcc82d2735858ba828720176e8a265474a7..1539310b2a20c835dc99a82d073dc31891efc7fb 100644
+--- a/dist/vitest-environment.mjs
++++ b/dist/vitest-environment.mjs
+@@ -64,7 +64,7 @@ function joinHeaders(value) {
+ //#endregion
+ //#region src/runtime/shared/h3-v2.ts
+ async function createFetchForH3V2() {
+-	const { H3 } = await import("h3-next/generic");
++	const { H3 } = await import("h3/generic");
+ 	const h3App = new H3();
+ 	const registry = /* @__PURE__ */ new Set();
+ 	const _fetch = fetch;
+diff --git a/package.json b/package.json
+index d6c80ca1a6795d421190dd21f8abfcbf9a2f1801..075c301b053733393394ba29fdbe582a1b445810 100644
+--- a/package.json
++++ b/package.json
+@@ -10,14 +10,38 @@
+   "type": "module",
+   "types": "./dist/e2e.d.mts",
+   "exports": {
+-    ".": "./src/e2e.ts",
+-    "./config": "./src/config.ts",
+-    "./e2e": "./src/e2e.ts",
+-    "./playwright": "./src/playwright.ts",
+-    "./experimental": "./src/experimental.ts",
+-    "./module": "./src/module.ts",
+-    "./runtime": "./src/runtime-utils/index.ts",
+-    "./vitest-environment": "./src/vitest-environment.ts",
++    ".": {
++      "types": "./dist/e2e.d.mts",
++      "default": "./dist/e2e.mjs"
++    },
++    "./config": {
++      "types": "./dist/config.d.mts",
++      "default": "./dist/config.mjs"
++    },
++    "./e2e": {
++      "types": "./dist/e2e.d.mts",
++      "default": "./dist/e2e.mjs"
++    },
++    "./playwright": {
++      "types": "./dist/playwright.d.mts",
++      "default": "./dist/playwright.mjs"
++    },
++    "./experimental": {
++      "types": "./dist/experimental.d.mts",
++      "default": "./dist/experimental.mjs"
++    },
++    "./module": {
++      "types": "./dist/module.d.mts",
++      "default": "./dist/module.mjs"
++    },
++    "./vitest-environment": {
++      "types": "./dist/vitest-environment.d.mts",
++      "default": "./dist/vitest-environment.mjs"
++    },
++    "./runtime": {
++      "types": "./dist/runtime-utils/index.d.mts",
++      "default": "./dist/runtime-utils/index.mjs"
++    },
+     "./package.json": "./package.json"
+   },
+   "imports": {

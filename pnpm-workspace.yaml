@@ -2,8 +2,13 @@ minimumReleaseAgeStrict: true
 
 minimumReleaseAgeExclude:
   - 'nuxt'
+  - 'nuxt-nightly'
   - '@nuxt/*'
 
+# @nuxt/test-utils-nightly ships with an unreplaced `workspace:*` dep — pin the
+# published environment package until the nightly publish pipeline is fixed.
+overrides:
+  'vitest-environment-nuxt': ^2.0.0
 allowBuilds:
   '@parcel/watcher': false
   'better-sqlite3': true
@@ -14,3 +19,6 @@ allowBuilds:
   simple-git-hooks: true
   ssh2: false
   vue-demi: false
+
+patchedDependencies:
+  '@nuxt/test-utils-nightly': .patches/@nuxt__test-utils-nightly.patch
