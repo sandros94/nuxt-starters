@@ -1,10 +1,13 @@
 import { defineConfig } from 'vitest/config'
 import { defineVitestProject } from '@nuxt/test-utils/config'
 
+const rootDir = import.meta.dirname
+
 const alias = {
-  '~~/**': './**',
-  '~/**': './app/**',
-  '#shared': './shared',
+  '~': `${rootDir}/app`,
+  '~~': rootDir,
+  '#shared': `${rootDir}/shared`,
+  '#server': `${rootDir}/server`,
 }
 
 export default defineConfig({

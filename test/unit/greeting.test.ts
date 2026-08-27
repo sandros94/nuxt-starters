@@ -1,9 +1,3 @@
-/**
- * UNIT — test/unit/
- *
- * Plain Node, no Nuxt/DOM/server. Ideal for the pure helpers in
- * `shared/`. Fastest layer, no build step.
- */
 import { describe, expect, it } from 'vitest'
 import { formatGreeting } from '#shared/utils/greeting'
 

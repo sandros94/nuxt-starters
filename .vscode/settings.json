@@ -1,7 +1,7 @@
 {
   // Use workspace version of TypeScript
-  "js/ts.tsdk.promptToUseWorkspaceVersion": true,
-  "js/ts.tsdk.path": "node_modules/typescript/lib",
+  // "js/ts.tsdk.promptToUseWorkspaceVersion": true,
+  // "js/ts.tsdk.path": "node_modules/typescript/lib",
 
   // OXC
   "prettier.enable": false,
@@ -22,5 +22,17 @@
     "strings": "on"
   },
   "tailwindCSS.classAttributes": ["class", "active-class", "inactive-class", "ui"],
-  "tailwindCSS.experimental.classRegex": [["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]]
+  "tailwindCSS.experimental.classRegex": [["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]],
+
+  // JSON Schema
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://docs.renovatebot.com/": true
+  }
 }

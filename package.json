@@ -1,49 +1,49 @@
 {
-  "name": "nuxt-v5",
+  "name": "nuxt-app",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "nuxt build",
+    "clear": "nuxt cleanup",
     "dev": "nuxt dev",
+    "generate": "nuxt generate",
     "lint": "oxlint . && oxfmt --check .",
     "fmt": "oxlint --fix . && oxfmt .",
-    "typecheck": "nuxt prepare && vue-tsgo --build",
+    "typecheck": "nuxt typecheck --checker=golar",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare && pnpm simple-git-hooks",
     "test": "vitest run",
     "test:unit": "vitest run --project unit",
     "test:e2e": "vitest run --project e2e",
-    "test:nuxt": "vitest run --project nuxt"
+    "test:nuxt": "vitest run --project nuxt",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "npm:@iconify-json/lucide@^1.2.125",
+    "@nuxt/ui": "npm:@nuxt/ui@^4.11.0",
+    "nuxt": "npm:nuxt@^4.5.2",
+    "tailwindcss": "npm:tailwindcss@^4.3.3",
+    "vue": "npm:vue@^3.5.41"
   },
   "devDependencies": {
-    "@iconify-json/lucide": "npm:@iconify-json/lucide@^1.2.114",
-    "@nuxt/icon": "npm:@nuxt/icon@2.2.3",
-    "@nuxt/test-utils": "npm:@nuxt/test-utils@4.0.3",
-    "@nuxt/ui": "npm:@nuxt/ui@^4.9.0",
-    "@types/node": "npm:@types/node@^24",
-    "@typescript/native-preview": "npm:@typescript/native-preview@7.0.0-dev.20260624.1",
+    "@dxup/unimport": "npm:@dxup/unimport@^0.1.2",
+    "@golar/vue": "npm:@golar/vue@^0.1.10",
+    "@nuxt/test-utils": "npm:@nuxt/test-utils@4.1.0",
+    "@playwright/test": "npm:@playwright/test@^1.62.1",
     "@vue/test-utils": "npm:@vue/test-utils@^2.4.11",
-    "defu": "^6.1.7",
-    "h3": "npm:h3@2.0.1-rc.22",
-    "happy-dom": "npm:happy-dom@^20.10.6",
-    "nitro": "https://pkg.pr.new/nitro@420be01",
-    "nuxt": "npm:nuxt-nightly@5.0.0-29558834.5284bce6",
-    "oxfmt": "npm:oxfmt@^0.56.0",
-    "oxlint": "npm:oxlint@^1.71.0",
-    "oxlint-tsgolint": "^0.24.0",
-    "playwright-core": "npm:playwright-core@^1.61.1",
+    "golar": "npm:golar@^0.1.10",
+    "happy-dom": "npm:happy-dom@^20.11.6",
+    "oxfmt": "npm:oxfmt@^0.64.0",
+    "oxlint": "npm:oxlint@^1.79.0",
+    "oxlint-tsgolint": "npm:oxlint-tsgolint@~7.0.2001",
+    "playwright-core": "npm:playwright-core@^1.62.1",
     "simple-git-hooks": "npm:simple-git-hooks@^2.13.1",
-    "tailwindcss": "npm:tailwindcss@^4.3.1",
-    "testcontainers": "npm:testcontainers@^12.0.3",
-    "typescript": "^6.0.3",
-    "vitest": "npm:vitest@^4.1.9",
-    "vue": "npm:vue@^3.5.39",
-    "vue-router": "npm:vue-router@5.0.4",
-    "vue-tsc": "npm:vue-tsc@^3.3.5",
-    "vue-tsgo": "npm:vue-tsgo@^0.2.2"
+    "typescript": "npm:typescript@^7.0.2",
+    "vitest": "npm:vitest@^4.1.11",
+    "vue-tsc": "npm:vue-tsc@^3.3.11"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint && pnpm typecheck"
   },
-  "packageManager": "pnpm@11.9.0"
+  "packageManager": "pnpm@11.17.0"
 }

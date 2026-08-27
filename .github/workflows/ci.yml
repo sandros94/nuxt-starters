@@ -1,37 +1,65 @@
 name: ci
 
-on: push
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  ci:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node: [24]
-
+  check:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v5
+      - name: Checkout code
+        uses: actions/checkout@v7
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v6
-
-      - name: Install node
-        uses: actions/setup-node@v6
-        with:
-          node-version: ${{ matrix.node }}
-          cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install
+      - name: Setup
+        uses: ./.github/actions/setup
 
       - name: Lint
-        run: pnpm run lint
+        run: pnpm lint
 
-      - name: Typecheck
-        run: pnpm run typecheck
+      - name: Typecheck code
+        run: pnpm typecheck
 
-      - name: Test
-        run: pnpm run test
+  test:
+    needs: check
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [unit, nuxt, e2e, browser]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Install Playwright browser
+        if: matrix.project == 'e2e' || matrix.project == 'browser'
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Test ${{ matrix.project }}
+        id: test
+        run: |
+          set -o pipefail
+          pnpm test:${{ matrix.project }} 2>&1 | tee "/tmp/test-${{ matrix.project }}.log"
+
+      - name: Test summary
+        if: always()
+        continue-on-error: true
+        run: |
+          {
+            echo "### ${{ matrix.project }} — ${{ steps.test.outcome == 'success' && '✅ passed' || '❌ failed' }}"
+            echo '```'
+            tail -n 30 "/tmp/test-${{ matrix.project }}.log" | sed -E 's/\x1b\[[0-9;]*m//g'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"

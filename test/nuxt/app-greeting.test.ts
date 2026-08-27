@@ -1,8 +1,3 @@
-/**
- * NUXT — component test via `mountSuspended`, which mounts the
- * component inside a real (async) Nuxt app so auto-imports, the
- * `useGreeting` composable and Nuxt UI components all resolve.
- */
 import { beforeEach, describe, expect, it } from 'vitest'
 import { mountSuspended } from '@nuxt/test-utils/runtime'
 

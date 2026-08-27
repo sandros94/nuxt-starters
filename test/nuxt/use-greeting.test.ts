@@ -1,11 +1,3 @@
-/**
- * NUXT — test/nuxt/
- *
- * Runs in the `nuxt` environment, so auto-imports (`useState`,
- * `computed`, `$fetch`…) and the Nuxt runtime are available. Use it
- * for composables/components that need Nuxt context. Server calls are
- * stubbed with `registerEndpoint` instead of hitting a real server.
- */
 import { beforeAll, beforeEach, describe, expect, it } from 'vitest'
 import { registerEndpoint } from '@nuxt/test-utils/runtime'
 
