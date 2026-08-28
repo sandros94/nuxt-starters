@@ -2,7 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "baseBranches": [
     "module",
-    "ui"
+    "ui",
+    "v5"
   ],
   "extends": [
     "github>nuxt/renovate-config-nuxt"
