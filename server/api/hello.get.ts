@@ -1,5 +1,5 @@
-// h3 utils are no longer auto-imported by nitro v3 — import them from `h3`.
-import { defineHandler, getQuery } from 'h3'
+// h3 utils are no longer auto-imported by nitro v3 — import them via `nitro/h3`.
+import { defineHandler, getQuery } from 'nitro/h3'
 
 export default defineHandler((event) => {
   const { name } = getQuery(event)

@@ -871,8 +871,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@nuxt/cli-nightly@4.0.0-20260826-113246-a586703':
-    resolution: {integrity: sha512-ez2j0IhfvbN/hpb8CHivgvTVMmO1R+w82FRp++E6fiQo+RMnMDFRTMvNkj5KI+ONkp3incVd5PUOos3x0mrIVw==}
+  '@nuxt/cli-nightly@4.0.0-20260827-214642-f02938d':
+    resolution: {integrity: sha512-z83+C+7AlW6S3QZwWIjh/sT+Xz3XZFfZWcg2i3Mgm45eeTcwyEcoqvjwIKW+YyLXIdpWGSagGJa0981JCH0ugg==}
     engines: {node: ^22.19.0 || ^24.11.0 || >=26.0.0}
     hasBin: true
     peerDependencies:
@@ -6381,7 +6381,7 @@ snapshots:
       fastq: 1.20.1
     optional: true
 
-  '@nuxt/cli-nightly@4.0.0-20260826-113246-a586703(@nuxt/schema-nightly@5.0.0-29796419.a2fd06ab)(jiti@2.7.0)(oxc-parser@0.140.0)(rolldown@1.2.5)':
+  '@nuxt/cli-nightly@4.0.0-20260827-214642-f02938d(@nuxt/schema-nightly@5.0.0-29796419.a2fd06ab)(jiti@2.7.0)(oxc-parser@0.140.0)(rolldown@1.2.5)':
     dependencies:
       '@clack/prompts': 1.7.0
       args-tokenizer: 0.3.0
@@ -10047,7 +10047,7 @@ snapshots:
   nuxt-nightly@5.0.0-29796419.a2fd06ab(42f936bbc81e386d3733a4264a390cb1):
     dependencies:
       '@dxup/nuxt': 0.5.10(esbuild@0.28.1)(magicast@0.5.4)(oxc-parser@0.140.0)(rolldown@1.2.5)(rollup@4.62.2)(vite@8.2.2)
-      '@nuxt/cli': '@nuxt/cli-nightly@4.0.0-20260826-113246-a586703(@nuxt/schema-nightly@5.0.0-29796419.a2fd06ab)(jiti@2.7.0)(oxc-parser@0.140.0)(rolldown@1.2.5)'
+      '@nuxt/cli': '@nuxt/cli-nightly@4.0.0-20260827-214642-f02938d(@nuxt/schema-nightly@5.0.0-29796419.a2fd06ab)(jiti@2.7.0)(oxc-parser@0.140.0)(rolldown@1.2.5)'
       '@nuxt/devtools': 4.0.0-alpha.15(689cfc9fdfe976378e37c8b0bef29fb4)
       '@nuxt/kit': '@nuxt/kit-nightly@5.0.0-29796419.a2fd06ab(confbox@0.2.4)(dotenv@17.4.2)(jiti@2.7.0)(magic-string@1.2.2)(mlly@1.8.2)(oxc-parser@0.140.0)(rolldown@1.2.5)(unplugin@3.3.0(esbuild@0.28.1)(rolldown@1.2.5)(rollup@4.62.2)(vite@8.2.2))'
       '@nuxt/nitro-server': '@nuxt/nitro-server-nightly@5.0.0-29796419.a2fd06ab(@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.7(supports-color@10.2.2)))(@oxc-project/types@0.146.0)(@vitejs/devtools-kit@0.4.8(cac@7.0.0)(srvx@0.11.22)(typescript@7.0.2)(vite@8.2.2))(chokidar@5.0.0)(confbox@0.2.4)(db0@0.3.4)(dotenv@17.4.2)(esbuild@0.28.1)(ioredis@5.11.1(supports-color@10.2.2))(jiti@2.7.0)(lightningcss@1.33.0)(mlly@1.8.2)(nuxt-nightly@5.0.0-29796419.a2fd06ab)(ofetch@2.0.0-alpha.3)(oxc-parser@0.140.0)(rolldown@1.2.5)(rollup@4.62.2)(typescript@7.0.2)(unplugin@3.3.0(esbuild@0.28.1)(rolldown@1.2.5)(rollup@4.62.2)(vite@8.2.2))(vite@8.2.2)'
