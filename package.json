@@ -54,7 +54,7 @@
     "oxlint-tsgolint": "npm:oxlint-tsgolint@~7.0.2001",
     "playwright-core": "npm:playwright-core@^1.62.1",
     "simple-git-hooks": "npm:simple-git-hooks@^2.13.1",
-    "typescript": "npm:typescript@^6.0.3",
+    "typescript": "npm:typescript@^7.0.2",
     "vitest": "npm:vitest@^4.1.11",
     "vue": "npm:vue@^3.5.41"
   },
