@@ -6,6 +6,7 @@
   "quoteProps": "consistent",
   "semi": false,
   "trailingComma": "all",
+  "proseWrap": "never",
 
   "ignorePatterns": [
     "**/CHANGELOG.md",
