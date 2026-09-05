@@ -39,24 +39,24 @@
   "dependencies": {
     "@nuxt/kit": "npm:@nuxt/kit@^4.5.2",
     "defu": "npm:defu@^6.1.7",
-    "h3": "npm:h3@^1.15.4"
+    "h3": "npm:h3@^1.15.11"
   },
   "devDependencies": {
     "@nuxt/module-builder": "npm:@nuxt/module-builder@^1.0.3",
     "@nuxt/schema": "npm:@nuxt/schema@^4.5.2",
     "@nuxt/test-utils": "npm:@nuxt/test-utils@4.1.0",
     "@playwright/test": "npm:@playwright/test@^1.62.1",
-    "@vue/test-utils": "npm:@vue/test-utils@^2.4.11",
-    "happy-dom": "npm:happy-dom@^20.11.2",
+    "@vue/test-utils": "npm:@vue/test-utils@^2.5.0",
+    "happy-dom": "npm:happy-dom@^20.14.0",
     "nuxt": "npm:nuxt@^4.5.2",
-    "oxfmt": "npm:oxfmt@^0.62.0",
-    "oxlint": "npm:oxlint@^1.77.0",
+    "oxfmt": "npm:oxfmt@^0.66.0",
+    "oxlint": "npm:oxlint@^1.81.0",
     "oxlint-tsgolint": "npm:oxlint-tsgolint@~7.0.2001",
     "playwright-core": "npm:playwright-core@^1.62.1",
-    "simple-git-hooks": "npm:simple-git-hooks@^2.13.1",
+    "simple-git-hooks": "npm:simple-git-hooks@^2.14.0",
     "typescript": "npm:typescript@^6.0.3",
     "vitest": "npm:vitest@^4.1.11",
-    "vue": "npm:vue@^3.5.41"
+    "vue": "npm:vue@^3.5.42"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint && pnpm typecheck"
