@@ -4,7 +4,7 @@ packages:
 
 catalog:
   nuxt: npm:nuxt@^4.5.2
-  vue: npm:vue@^3.5.41
+  vue: npm:vue@^3.5.42
 
 minimumReleaseAgeStrict: true
 
