@@ -1,6 +1,4 @@
-# Sandros94's Nuxt UI Minimal Starter
-
-Based on the official [Nuxt UI starter template](https://github.com/nuxt-ui-templates/starter).
+# Sandros94's Nuxt v5 Minimal Starter
 
 Look at my [starters repo](https://github.com/sandros94/nuxt-starters) for more templates.
 
