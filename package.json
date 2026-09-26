@@ -39,7 +39,7 @@
     "playwright-core": "npm:playwright-core@^1.63.0",
     "simple-git-hooks": "npm:simple-git-hooks@^2.14.0",
     "typescript": "npm:typescript@^7.0.2",
-    "vitest": "npm:vitest@^4.1.11",
+    "vitest": "npm:vitest@^5.0.2",
     "vue-tsc": "npm:vue-tsc@^3.3.11"
   },
   "simple-git-hooks": {
