@@ -1,5 +1,7 @@
 import { computed } from 'vue'
+
 import { useRuntimeConfig, useState } from '#imports'
+
 import { formatGreeting } from '../../shared/greeting'
 
 export function useGreeting() {

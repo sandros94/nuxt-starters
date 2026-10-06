@@ -1,5 +1,6 @@
 import { defineNuxtPlugin } from '#app'
 import { greeting, version } from '#my-module/options'
+
 import { formatGreeting } from '../../shared/greeting'
 
 export default defineNuxtPlugin({

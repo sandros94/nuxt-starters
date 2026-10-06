@@ -21,7 +21,7 @@ export default defineNuxtModule<ModuleOptions>({
     name: 'my-module',
     configKey: 'myModule',
     compatibility: {
-      nuxt: '>=4.0.0',
+      nuxt: '>=4.6.0',
     },
   },
   defaults: {

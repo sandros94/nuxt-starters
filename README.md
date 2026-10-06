@@ -37,7 +37,9 @@ The module ships a small greeting feature whose only job is to exercise every au
 | `addTemplate` + `addTypeTemplate` | `#my-module/options` virtual module | `browser` |
 | `addPlugin` | `$greeting`, `$greetingVersion` | `browser` |
 
-Runtime code lives under `src/runtime`, split the way Nuxt splits an app: `app/` (client + SSR), `server/` (nitro) and `shared/` (both — which is why the pure helper there is unit-testable without Nuxt).
+Runtime code lives under `src/runtime`, split the way Nuxt splits an app: `app/` (client + SSR), `server/` and `shared/` (both — which is why the pure helper there is unit-testable without Nuxt).
+
+Server code imports from `nuxt/server` rather than `h3`/`nitropack`, so the same files run on Nuxt 4 (Nitro 2) and Nuxt 5 (Nitro 3) with no server peer dependency — which is why the module requires Nuxt `>=4.6.0`. Need to support older versions? See the [server compatibility guide](https://nuxt.com/docs/guide/modules/server-compatibility) for per-API handler variants.
 
 ## Testing
 

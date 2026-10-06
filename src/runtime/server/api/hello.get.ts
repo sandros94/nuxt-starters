@@ -1,4 +1,5 @@
-import { defineEventHandler, getQuery } from 'h3'
+import { defineEventHandler, getQuery } from 'nuxt/server'
+
 import { formatGreeting } from '../../shared/greeting'
 import { useGreetingOptions } from '../utils/greeting'
 
