@@ -6,6 +6,7 @@
     "noEmit": true
   },
   // Overriding `include` drops the generated entries, so the server type entry
-  // (runtime config, route rules, … augmentations) is re-added explicitly.
-  "include": ["../../../.nuxt/types/nitro-nuxt.d.ts", "./**/*.ts"]
+  // (runtime config, route rules, … augmentations) is re-added explicitly,
+  // along with the module's own runtime config augmentation.
+  "include": ["../../../.nuxt/types/nitro-nuxt.d.ts", "../../schema.d.ts", "./**/*.ts"]
 }

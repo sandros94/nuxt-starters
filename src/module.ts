@@ -10,13 +10,14 @@ import {
   defineNuxtModule,
   useLogger,
 } from '@nuxt/kit'
+import type { NuxtModule } from '@nuxt/schema'
 import defu from 'defu'
 import { version } from '../package.json'
 import type { ModuleOptions } from './types'
 
 export type { GreetingOptions, ModuleOptions, ModulePublicRuntimeConfig } from './types'
 
-export default defineNuxtModule<ModuleOptions>({
+const module: NuxtModule<ModuleOptions> = defineNuxtModule<ModuleOptions>({
   meta: {
     name: 'my-module',
     configKey: 'myModule',
@@ -93,3 +94,5 @@ export default defineNuxtModule<ModuleOptions>({
     logger.debug(`greeting configured as "${options.greeting.prefix}, …"`)
   },
 })
+
+export default module

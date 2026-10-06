@@ -17,12 +17,3 @@ export interface ModuleOptions {
 export interface ModulePublicRuntimeConfig {
   myModule: ModuleOptions
 }
-
-/**
- * The same augmentation module-builder emits, declared here so the module's
- * *own* sources see it too — `dist/` types don't apply while type-checking
- * `src/`. Identical `extends` clauses merge, so nothing conflicts downstream.
- */
-declare module '@nuxt/schema' {
-  interface PublicRuntimeConfig extends ModulePublicRuntimeConfig {}
-}
