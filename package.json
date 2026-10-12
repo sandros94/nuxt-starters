@@ -19,7 +19,7 @@
     "test:browser": "playwright test"
   },
   "dependencies": {
-    "@iconify-json/lucide": "npm:@iconify-json/lucide@^1.2.139",
+    "@iconify-json/lucide": "npm:@iconify-json/lucide@^1.2.142",
     "@nuxt/ui": "npm:@nuxt/ui@^4.11.3",
     "nuxt": "npm:nuxt@^4.6.1",
     "tailwindcss": "npm:tailwindcss@^4.3.3",
@@ -29,18 +29,18 @@
     "@dxup/unimport": "npm:@dxup/unimport@^0.1.2",
     "@golar/vue": "npm:@golar/vue@^0.1.10",
     "@nuxt/test-utils": "npm:@nuxt/test-utils@4.1.0",
-    "@playwright/test": "npm:@playwright/test@^1.63.0",
+    "@playwright/test": "npm:@playwright/test@^1.64.0",
     "@vue/test-utils": "npm:@vue/test-utils@^2.5.1",
     "golar": "npm:golar@^0.1.10",
-    "happy-dom": "npm:happy-dom@^20.14.5",
-    "oxfmt": "npm:oxfmt@^0.71.0",
-    "oxlint": "npm:oxlint@^1.86.0",
-    "oxlint-tsgolint": "npm:oxlint-tsgolint@~7.0.2003",
-    "playwright-core": "npm:playwright-core@^1.63.0",
+    "happy-dom": "npm:happy-dom@^20.14.6",
+    "oxfmt": "npm:oxfmt@^0.72.0",
+    "oxlint": "npm:oxlint@^1.87.0",
+    "oxlint-tsgolint": "npm:oxlint-tsgolint@~7.0.2004",
+    "playwright-core": "npm:playwright-core@^1.64.0",
     "simple-git-hooks": "npm:simple-git-hooks@^2.14.0",
     "typescript": "npm:typescript@^7.0.2",
     "vitest": "npm:vitest@^4.1.11",
-    "vue-tsc": "npm:vue-tsc@^3.3.12"
+    "vue-tsc": "npm:vue-tsc@^3.3.13"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint && pnpm typecheck"
