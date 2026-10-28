@@ -46,7 +46,7 @@
     "@nuxt/test-utils": "npm:@nuxt/test-utils@4.3.3",
     "@playwright/test": "npm:@playwright/test@^1.63.0",
     "@vue/test-utils": "npm:@vue/test-utils@^2.5.1",
-    "happy-dom": "npm:happy-dom@^20.14.5",
+    "happy-dom": "npm:happy-dom@^21.0.4",
     "nuxt": "npm:nuxt@^4.6.3",
     "oxfmt": "npm:oxfmt@^0.72.0",
     "oxlint": "npm:oxlint@^1.87.0",
