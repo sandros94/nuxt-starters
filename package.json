@@ -21,7 +21,7 @@
   "dependencies": {
     "@iconify-json/lucide": "npm:@iconify-json/lucide@^1.2.158",
     "@nuxt/ui": "npm:@nuxt/ui@^4.13.0",
-    "nuxt": "npm:nuxt@^4.6.4",
+    "nuxt": "npm:nuxt@^4.7.0",
     "tailwindcss": "npm:tailwindcss@^4.3.5",
     "vue": "npm:vue@^3.5.46"
   },
